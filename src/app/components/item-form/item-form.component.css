@@ -1,0 +1,7 @@
+.needs-validation .ng-invalid.ng-touched {
+    border-color: #dc3545;
+}
+
+.needs-validation .ng-valid.ng-touched {
+    border-color: #198754;
+}

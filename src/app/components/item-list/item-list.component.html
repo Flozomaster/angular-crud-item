@@ -1,0 +1,17 @@
+<div class="container mt-5">
+    <h2 class="mb-4">Item List</h2>
+    <div class="list-group">
+    <div class="list-group-item" *ngFor="let item of items">
+        <div class="d-flex justify-content-between align-items-center">
+        <span>{{ item.name }}</span>
+        <div>
+            <button class="btn btn-primary btn-sm me-2" [routerLink]="['/edit', item.id]">Edit</button>
+            <button class="btn btn-danger btn-sm" (click)="deleteItem(item.id)">Delete</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="mt-4">
+    <button class="btn btn-success" [routerLink]="['/add']">Add New Item</button>
+    </div>
+</div>
